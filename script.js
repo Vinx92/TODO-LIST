@@ -22,6 +22,4 @@ function aggiungi() {
   IMG_CROSS.src = 'assets/cross-16.png'
   IMG_CROSS.alt = 'icona croce'
   DIV_ICONE.appendChild(IMG_CROSS)
-
-
 }
