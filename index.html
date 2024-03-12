@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/to do list.png" type="image/x-icon">
+    <title>Todo List</title>
+    <style>
+        * {
+            font-family: "Roboto Mono", monospace;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        main {
+            width: 500px;
+            background-color: purple;
+            padding: 50px;
+        }
+
+        input[type="text"] {
+            width: 99%;
+            height: 35px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+            font-size: 15px;
+            padding: 0px 0px 0px 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .lista {
+            width: 500px;
+            background-color: red;
+            margin-top: 10px;
+            border-radius: 10px;
+            padding: 50px;
+        }
+
+        .elemento {
+            background-color: #9f9f9f;
+            height: 40px;
+            width: 600px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Todo List</h1>
+        <input type="text" id="oggetto" name="oggetto" placeholder="Nuovo compito" maxlength="42">
+        <input onclick="aggiungi()" type="submit" value="Inserisci" id="inserisci" name="Inserisci">
+    </main>
+    <div class="elemento">
+        <span></span>
+        <div>
+            <img src="assets/check-16.png" alt="">
+            <img src="assets/cross-16.png" alt="">
+        </div>
+    </div>
+</body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+<script src="script.js"></script>
+
+</html>
