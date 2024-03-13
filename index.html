@@ -74,15 +74,19 @@
         .fatto {
             text-decoration: line-through;
         }
+
+        .check {
+            text-decoration: line-through;
+        }
     </style>
 </head>
 
 <body>
     <main>
         <h1>Todo List</h1>
-        <form onclick="event.preventDefault()" method="post">
+        <form id="form" method="post">
             <input type="text" id="oggetto" name="oggetto" placeholder="Nuovo compito" maxlength="42">
-            <input onclick="aggiungi()" type="submit" value="Inserisci" id="inserisci" name="Inserisci">
+            <input type="submit" value="Inserisci" id="inserisci" name="Inserisci">
         </form>
     </main>
     <!-- <div class="elemento">
