@@ -14,9 +14,6 @@
         body {
             margin: 0;
             height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
 
         h1 {
@@ -28,6 +25,7 @@
             width: 500px;
             background-color: purple;
             padding: 50px;
+            margin: auto;
         }
 
         input[type="text"] {
@@ -58,15 +56,27 @@
         .elemento {
             background-color: #9f9f9f;
             height: 40px;
-            width: 600px;
+            width: 560px;
+            padding: 0px 20px;
             border-radius: 5px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 10px 0px;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .icone {
+            display: flex;
+            gap: 15px;
+        }
+
+        .fatto {
+            text-decoration: line-through;
         }
     </style>
 </head>
+
 <body>
     <main>
         <h1>Todo List</h1>
@@ -75,17 +85,18 @@
             <input onclick="aggiungi()" type="submit" value="Inserisci" id="inserisci" name="Inserisci">
         </form>
     </main>
-    <div class="elemento">
+    <!-- <div class="elemento">
         <span></span>
         <div>
             <img src="assets/check-16.png" alt="">
             <img src="assets/cross-16.png" alt="">
         </div>
-    </div>
+    </div> -->
 </body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     rel="stylesheet">
 <script src="script.js"></script>
+
 </html>
